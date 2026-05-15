@@ -1,0 +1,5 @@
+mkdocs
+mkdocs-mermaid2-plugin
+mkdocs-backlinks
+mkdocs-material
+mkdocs-roamlinks-plugin
