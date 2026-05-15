@@ -1,0 +1,36 @@
+site_name: OTG Wiki
+
+theme:
+  name: material
+  font:
+    text: Inter        # Fonte principal do Quartz/Vercel
+    code: Roboto Mono  # Fonte para blocos de código
+  palette: 
+      # Light mode
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        primary: indigo
+        accent: indigo
+        toggle:
+          icon: material/brightness-7
+          name: Switch to dark mode
+
+      # Dark mode
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        primary: black
+        accent: black
+        toggle:
+          icon: material/brightness-4
+          name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.superfences:
+      preserve_tabs: true
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - roamlinks
