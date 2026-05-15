@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "framework": null,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static"
+    }
+  ]
+}
